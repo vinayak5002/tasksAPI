@@ -13,7 +13,7 @@ Deploy mongo server and create a database called ```tasks``` with one collection
 *you can have the collection name of your wish, specify it in [Task.java](https://github.com/vinayak5002/tasksAPI/blob/deac3bb96a4df10499719dcfd7ca6990bb8d14fe/src/main/java/com/vizz/Tasks/model/Task.java#L11C34-L11C34)  
 Create a user
 ```
-db.createUser({ user: "root",pwd:  "root", roles: [ { role: "readWrite", db: "movies" }]})
+db.createUser({ user: "root",pwd:  "root", roles: [ { role: "readWrite", db: "tasks" }]})
 ```
 
 After setting up the mongodb server, you can fork, clone this java project and open it in the java IDE of your choice
