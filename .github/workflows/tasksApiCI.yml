@@ -83,4 +83,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: thearaseng/dockerized-spring-boot-app:${{ env.DATE }}
+          tags: vinayak5002/k-tasks:${{ env.DATE }}
