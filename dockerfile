@@ -1,5 +1,6 @@
 FROM openjdk:17
-CMD ["./gradlew", "bootJar"]
-COPY build/libs/*.jar app.jar
+WORKDIR /app
+COPY . /app
+CMD ["./gradlew", "clean", "bootJar"]
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app.jar"]
